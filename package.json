@@ -1,0 +1,20 @@
+{
+  "name": "willie-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wwilliewells@gitlab.com/wwilliewells/willie-seed.git"
+  },
+  "keywords": ["this"],
+  "author": "William Willie Wells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/wwilliewells/willie-seed/issues"
+  },
+  "homepage": "https://gitlab.com/wwilliewells/willie-seed#README"
+}
