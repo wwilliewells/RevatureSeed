@@ -4,7 +4,8 @@
   "description": "Revature Seed Training first project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "http-server -p 8000"
   },
   "repository": {
     "type": "git",
