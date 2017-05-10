@@ -5,49 +5,59 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--view Scale-->
       <meta name="author" content="William Willie Wells">
       <meta name="keywords" content="this"><!--misleading keywords SEO -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/index.css">
       <title>W. Willie Wells' Revature Site</title>
     </head><!--head is for html, header (h1) is for body-->
-    <body>
-      <header>
-        <img src="./img/face1.jpg" alt="this" title="this">
-        <hgroup>
-          <h1><a href="index.html">William Willie Wells<a></h1>
-          <h2>Revature Seed Trainee</h2>
-        </hgroup>
+    <body class="container-fluid">
+      <header class="row">
+        <div class="col-sm-2">
+          <img src="./img/face1.jpg" class="img-responsive" alt="missing image" title="image">
+        </div>
+        <div class="col-sm-8">
+          <hgroup>
+            <h1><a href="index.html">William Willie Wells</a></h1>
+            <h2>Revature Seed Trainee</h2>
+          </hgroup>
+        </div>
      </header>
       <!-- site index to other pages-->
       <!--h1 align="center"> Welcome to William Willie Wells' Revature Seed home page.</h1-->
-      <main>
-      <section>
-        <header>The following Page is about William Willie Wells</header>
-        <p>This page has information regarding William Willie Wells</p>
-        <footer><a href="html/wwilliewells.html">William Willie Wells</a></footer>
-      </section>
-      <br>
-      <section>
-        <header>The following Page is about Randall Patrick Munroe</header>
-        <p>This page has information regarding Randall Patrick Munroe</p>
-        <footer><a href="html/RandallMunroe.html">Randall Patrick Munroe</a></footer>
-      </section>
-      <br>
-      <section>
-        <header>The following Page is about Robotics</header>
-        <p>This page has information regarding Robotics</p>
-        <footer><a href="html/robotics.html">Robotics</a></footer>
-      </section>
+      <main class="row">
+        <div class="col-sm-6"> 
+          <section><br>
+            <header>The following Page is about William Willie Wells</header>
+            <p>This page has information regarding William Willie Wells</p>
+            <footer><a href="html/wwilliewells.html">William Willie Wells</a></footer>
+          </section>
+          <br>
+          <section>
+            <header>The following Page is about Randall Patrick Munroe</header>
+            <p>This page has information regarding Randall Patrick Munroe</p>
+            <footer><a href="html/RandallMunroe.html">Randall Patrick Munroe</a></footer>
+          </section>
+        </div>
+        <div class="col-sm-6">
+          <section><br>
+            <header>The following Page is about Robotics</header>
+            <p>This page has information regarding Robotics</p>
+            <footer><a href="html/robotics.html">Robotics</a></footer>
+          </section>
+        </div>
       </main>
-      <footer> 
-          <nav>
-            <ul>
-              <li><a href="#">sitemap</a></li>
-              <li><a href="html/contact.html">contact us</a></li>
-              <li><a href="https://www.linkedin.com/in/william-willie-wells/">linkedin</a></li>
-            </ul>
-          </nav>
-          <small>
-            &copy; copyright 2017 william willie wells all rights reserved
-          </small>
-        </footer>
+      <footer class="row">
+        <br><br> 
+        <nav class="col-md-12" align="center">
+          <ul class="list-inline">
+            <li><a href="#">sitemap</a></li>
+            <li><a href="html/contact.html">contact us</a></li>
+            <li><a href="https://www.linkedin.com/in/william-willie-wells/">linkedin</a></li>
+          </ul>
+        </nav>
+        <small class="col-sm-12 text-center">
+          &copy; copyright 2017 william willie wells, all rights reserved
+        </small>
+      </footer>
     </body>
   </html>
-
