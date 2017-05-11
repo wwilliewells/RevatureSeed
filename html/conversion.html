@@ -19,22 +19,22 @@
         </hgroup>
       </header>
       <main>
-        <section>
+        <!--section>
           about application -> numeric conversions -> general form with convert button, 
 		      input units and value, output units and value, force sign in, show user
-        </section>
+        </section-->
         <form class="row" action="#" method="post">
           <div class="form-group col-sm-11"><legend>Conversions</legend></div>
           <div class="form-group col-sm-6"><legend>Input</legend></div> 
+          <div class="form-group col-sm-6"><legend>Output</legend></div>
           <div class="form-group col-sm-3">
             <label for="units">Units</label>
-            <input type="text" name="units" id="units" placeholder="units" required>
+            <input class="form-control" type="text" name="units" id="units" placeholder="units" required>
           </div>
           <div class="form-group col-sm-3">
             <label for="value">Value</label>
             <input class="form-control" type="text" name="value" id="value" placeholder="value" required>
-          </div>
-          <div class="form-group col-sm-6"><legend>Output</legend></div> 
+          </div> 
           <div class="form-group col-sm-3">
             <label for="units">Units</label>
             <!--input type="text" name="units" id="units" placeholder="units" required-->
@@ -46,11 +46,18 @@
           <div class="form-group col-sm-11"><legend>Sign In</legend></div>
           <div class="form-group col-sm-6">
             <label for="userName">User Name</label>
-            <input type="text" name="username" id="userName" placeholder="username">
-            <label for="email">e-mail</label>
-            <input type="text" name="email" id="email" placeholder="joe.schmoe@email.com">
+            <input class="form-control"type="text" name="username" id="userName" placeholder="username">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="password">Password</label> <!--type password?-->
+            <input class="form-control" type="text" name="password" id="password" placeholder="" required>
+          </div>
+          <div class="form-group col-sm-6 text-right">
             <button type="reset">reset</button>
+          </div>
+          <div class="form-group col-sm-6"> 
             <button id="s" type="submit">submit</button>
+          </div>
           </fieldset>
         </form>
       </main>
