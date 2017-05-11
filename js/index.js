@@ -1,28 +1,14 @@
-//  literal object
-// var contact = {
-//   name: 'Willie',
-//   email: 'wwilliewells@gmail.com',
-//   message: '',
-// }
+var www = document.querySelector('#www');
+var rpm = document.querySelector('#rpm');
+var robot = document.querySelector('#robot');
+var convert = document.querySelector('#convert');
+var sections = document.querySelectorAll('section');
 
-// constructor object
-var contact = function(){
-  this.name = 'willie';
-  this.email ='@email';
-  this.message = '';
-}
+/*for(var x=0; x < sections.length; x += 1){
+  if(x % 2 == 0){ sections[x].style.color = 'rgb(255,170,50)'; }
+  else{ sections[x].style.color = 'rgb(255,170,100)'; }
+}*/
 
-var c = new contact();
-/*c.name =
-  c.email =
-  c.message =*/ 
-
-var c2 = new contact();
-c2.name = 'david';
-c2.message = 'what';
-
-contact.title = 'this';
-contact.prototype.title = 'stuff';
-console.log(c2.title);
-console.log(c.name);
-console.log(contact.title);
+www.addEventListener('click',function(){
+  console.log('Yes Willie is my middlename');
+})

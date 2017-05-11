@@ -11,10 +11,10 @@ body{
   color: rgb(255,170,100);
 }
 button{
-  background-color: rgb(23,23,232);
-  color: rgb(123,123,123);
+  background-color: rgb(3,100,100);
+  color: rgb(255,170,100);
   font-size: 18px;
-  
 }
+legend{ color: rgb(255,170,100); }
 
 /*body>header{}*/
