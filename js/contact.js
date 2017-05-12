@@ -1,27 +1,46 @@
 (function(){
-  // constructor object
-  var contact = function(){
-    this.name = 'willie';
-    this.email ='@email';
-    this.message = '';
-  }
-  var c = new contact();
 
-  var fn = document.querySelector('#fullName');
+  var fullname = document.querySelector('#fullName');
   var email = document.querySelector('#email');
-  var msg = document.querySelector('#message');
+  var message = document.querySelector('#message');
 
-  //var n=0;
-  var s = document.querySelector('#s');
-  s.addEventListener('click',function(e){
-    e.stopPropagation();
-    if(fn.value.length > 0){ c.name = fn.value; }
-    else{ console.log('no name'); return; }
-    if(email.value.length > 0){ c.email = email.value; }
-    else{ console.log('no email'); return; }
-    if(msg.value.length > 0){ c.message = msg.value; }
-    else{ console.log('no message'); return; }
+  var submit = document.querySelector('#submit');
+  submit.addEventListener('click',function(event){
+    event.stopPropagation();
+    if(fullname.value.length < 1){ console.log('no name'); return; }
+    if(email.value.length < 1){ console.log('no email'); return; }
+    if(message.value.length < 1){ console.log('no message'); return; }
 
-    console.log(c.name,c.email,c.message);
+    console.log(fullname.value,email.value,message.value);
   });
+
+  // constructor object
+  function xhr(func){
+    var ajax = new XMLHttpRequest(); // xhr object
+    ajax.open('get','../data.json');
+    ajax.onreadystatechange = function(){
+      console.log(ajax.readyState,ajax.status);
+      if(ajax.readyState == 4){ 
+        if(ajax.status == 200){ 
+          console.log(ajax.response); func(ajax.response); 
+        }
+        else{ console.log('error'); return; }
+      }
+    };
+    
+    ajax.send();
+  }
+  xhr(preLoadForm);
+
+  function preLoadForm(response){
+    if(response){ 
+      var r=JSON.parse(response);
+      console.log(r.fullname,r.email,r.message);
+      fullname.value = r.fullname; 
+      email.value = r.email;
+      message.value = r.message;
+    }
+  }
+   
+
 })();
