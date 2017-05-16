@@ -5,15 +5,18 @@ namespace willieSeed{
   internal class Program{
     public static void Main(){
       sc.WriteLine("I am lost at Sea");
-      PlaySquare();
+      PlayShape();
     }
-    public static void PlaySquare(){
-      //var s = new Square(){Width = 1.1};
+    public static void PlayShape(){
       var s1 = new Square(2.3);
-      //Square s2(2.3);
+      var c1 = new Circle(1.15);
+      var t1 = new Triangle(2.3,2.3);
+      var sp1 = new Sphere(2.3);
+      var cu1 = new Cube(2);
 
-      sc.WriteLine(s1.Perimeter());
-      sc.WriteLine("Area: {0:F}, Perimeter: {1:F} ",s1.Area(),s1.Perimeter());
+      var arr = new Shape[]{s1,c1,t1,sp1,cu1};
+
+      foreach(var item in arr){ item.print(); }    
     }
   }
 }
