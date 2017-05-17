@@ -12,11 +12,11 @@ namespace willieSeed{
       var c1 = new Circle(1.15);
       var t1 = new Triangle(2.3,2.3);
       var sp1 = new Sphere(2.3);
-      var cu1 = new Cube(2);
+      var cu1 = new Cube(2.3);
 
       var arr = new Shape[]{s1,c1,t1,sp1,cu1};
 
-      foreach(var item in arr){ item.print(); }    
+      foreach(var item in arr){ item.Print(); }    
     }
   }
 }

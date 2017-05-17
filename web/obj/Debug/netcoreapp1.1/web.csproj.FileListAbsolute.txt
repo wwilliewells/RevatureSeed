@@ -1,0 +1,8 @@
+C:\RevatureSeed\willie-seed\web\bin\Debug\netcoreapp1.1\web.deps.json
+C:\RevatureSeed\willie-seed\web\bin\Debug\netcoreapp1.1\web.runtimeconfig.json
+C:\RevatureSeed\willie-seed\web\bin\Debug\netcoreapp1.1\web.runtimeconfig.dev.json
+C:\RevatureSeed\willie-seed\web\bin\Debug\netcoreapp1.1\web.dll
+C:\RevatureSeed\willie-seed\web\bin\Debug\netcoreapp1.1\web.pdb
+C:\RevatureSeed\willie-seed\web\obj\Debug\netcoreapp1.1\web.AssemblyInfo.cs
+C:\RevatureSeed\willie-seed\web\obj\Debug\netcoreapp1.1\web.dll
+C:\RevatureSeed\willie-seed\web\obj\Debug\netcoreapp1.1\web.pdb

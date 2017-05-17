@@ -5,7 +5,8 @@ namespace willieSeed{
   internal interface Shape{
     double Perimeter();
     double Volume();
-    void print();
+    void Print();
+    string Name();
 
     //#region FIELDS . . . #endregion
     int SideCount();

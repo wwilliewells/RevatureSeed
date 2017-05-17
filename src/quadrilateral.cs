@@ -8,6 +8,7 @@ namespace willieSeed{
     }
     public override double Volume(){ return Width*Height; }
     public override double Perimeter(){ return 2*(Width+Height); }
+    public override string Name(){ return "Quadrilateral"; }
 
     // properties
     public double Width{ 

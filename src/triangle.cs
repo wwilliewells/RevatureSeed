@@ -10,18 +10,13 @@ namespace willieSeed{
     public override double Perimeter(){ 
       return Base+Height+Math.Sqrt(Base*Base+Height*Height); 
     }
+    public override string Name(){ return "Triangle"; }
 
     // properties
-    public double Base{ 
-      get{ return _base; } 
-      set{ _base = Check(value); } 
-    }
-    public double Height{ 
-      get{ return _height; } 
-      set{ _height = Check(value); }
-    }
+    public double Base{ get{ return _base; } set{ _base = Check(value); } }
+    public double Height{ get{ return _height; } set{ _height = Check(value); } }
 
-    //#region FIELDS . . . #endregion
+    // fields
     private double _base = default(double);
     private double _height = default(double);
   }
