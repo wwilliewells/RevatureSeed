@@ -5,13 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="author" content="William Willie Wells">
       <meta name="keywords" content="this">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="../css/index.css">
       <title>William Willie Wells</title>
     </head>
-    <body>
+    <body class="w">
       <header class="row text-center">
         <hgroup>
           <h1><a href="../index.html">William Willie Wells</a></h1>
@@ -23,48 +22,52 @@
           about application -> numeric conversions -> general form with convert button, 
 		      input units and value, output units and value, force sign in, show user
         oninput="function()"</section-->
-        <form class="row" action="#" method="post">
+        <form class="row" action="http://127.0.0.1:5000/api/Converter", method="post">
           <div class="form-group col-sm-12"><legend>Conversions</legend></div>
           <div class="form-group col-sm-6"><legend>Input</legend></div> 
           <div class="form-group col-sm-6"><legend>Output</legend></div>
           <div class="form-group col-sm-3">
             <label for="units">Units</label>
-            <input class="form-control" type="text" name="units" id="units" placeholder="units" required>
+            <input class="form-control" type="text" name="units" id="units" placeholder="units">
           </div>
           <div class="form-group col-sm-3">
             <label for="value">Value</label>
-            <input class="form-control" type="number" step="0.0001" name="value" id="value" placeholder="value" required>
+            <input class="form-control" type="number" step="0.0001" name="value" id="value" placeholder="value">
           </div> 
           <div class="form-group col-sm-3">
-            <label for="units">Units</label>
-            <output type="text" name="cunits" id="cunits">picoseconds</output>
+            <label for="cunits">Units</label>
+            <textarea type="text" id="cunits" cols="23" rows="1">picoseconds</textarea>
           </div>
           <div class="form-group col-sm-3">
-            <label for="value">Value</label>
-            <output type="number" name="cvalue" id="cvalue">23</output>
+            <label for="cvalue">Value</label>
+            <textarea name="cvalue" id="cvalue" cols="23" rows="1">23</textarea>
           </div>
           <div class="form-group col-sm-12 text-center">
-            <button id="convert" type="submit">Convert</button>
+            <button id="convert">Convert</button>
           </div>
-          <!--div class="form-group col-sm-6"><legend>Sign In</legend></div>
+          <div class="form-group col-sm-6">
+            <output type="text" id="Sign"><legend>Sign In</legend></output>
+          </div>
           <div class="form-group col-sm-6">
             <output type="text" name="login" id="login"><legend>Willie</legend></output>
           </div>
           <div class="form-group col-sm-6">
             <label for="userName">User Name</label>
-            <input class="form-control"type="text" name="username" id="userName" placeholder="username">
+            <input class="form-control"type="text" name="username" id="userName" placeholder="username" required>
           </div>
           <div class="form-group col-sm-6">
             <label for="password">Password</label> 
-            <input class="form-control" type="text" name="password" id="password" placeholder="" required>
+            <input class="form-control" type="password" name="password" id="password" placeholder="*******" required>
           </div>
           <div class="form-group col-sm-6 text-right">
-            <button type="reset">reset</button>
+            <button id="reset" type="reset">reset</button>
           </div>
           <div class="form-group col-sm-6"> 
-            <button id="submit" type="submit">submit</button>
-          </div-->
-          </fieldset>
+            <button id="submit">submit</button>
+          </div>
+          <div class="form-group col-sm-12 text-center">
+            <output type="text" id="warn"></output>
+          </div>
         </form>
       </main>
       <footer class="row">
@@ -82,6 +85,6 @@
           &copy; copyright 2017 william willie wells, all rights reserved
         </small>
       </footer>
+      <script src="../js/convert.js"></script>
     </body>
-    <script src="../js/convert.js"></script>
   </html>

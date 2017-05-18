@@ -18,16 +18,7 @@ namespace web
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-                //builder.EnableCors();
- 
-            /*config.MapHttpAttributeRoutes();
- 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "Api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );*/
+                .AddEnvironmentVariables();             
             Configuration = builder.Build();
         }
 
@@ -38,6 +29,9 @@ namespace web
         {
             // Add framework services.
             services.AddMvc();
+            //services.AddCors(options => options.AddPolicy("AllowCors",builder=>builder.A);
+            services.AddCors(options => options.AddPolicy("AllowCORS",builder=>builder.WithOrigins("http://127.0.0.1:8000","http://127.0.0.1:5000")
+             .AllowAnyHeader() .AllowAnyMethod()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
